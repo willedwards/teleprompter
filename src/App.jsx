@@ -113,7 +113,7 @@ export default function App() {
     <div style={{ height: "100vh", display: "grid", gridTemplateColumns: "380px 1fr" }}>
       {/* Controls */}
       <div style={{ padding: 16, borderRight: "1px solid #222", background: "#0b0b0b", color: "#fff" }}>
-        <h2 style={{ margin: "0 0 12px 0", fontSize: 18 }}>PilgrimWarrior Prompter</h2>
+        <h2 style={{ margin: "0 0 12px 0", fontSize: 18 }}>TelePrompter</h2>
 
         <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 12 }}>
           <button onClick={() => setIsRunning((v) => !v)} style={btn()}>

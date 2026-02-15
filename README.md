@@ -4,19 +4,20 @@ A React-based teleprompter app built with Vite.
 
 ## Prerequisites
 
-- [Node.js](https://nodejs.org/) (version 18 or newer recommended)
+- [Node.js](https://nodejs.org/) (version 20.19.0 or newer recommended)
 - [npm](https://www.npmjs.com/) (comes with Node.js)
 
 ## Installation
+1. > nvm install 20.19.0
 
-1. **Clone the repository:**
+2. **Clone the repository:**
 
 > git clone https://github.com/willedwards/teleprompter.git
 
-2. **Install the code**
+3. **Install the code**
 
 >npm i
 
-3. **run the code**
+4. **run the code**
 
 >npm run dev
