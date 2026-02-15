@@ -109,6 +109,19 @@ export default function App() {
     if (el) el.scrollTop = Math.min(el.scrollHeight, el.scrollTop + px);
   };
 
+
+  // Load text from latest.txt
+  const loadFromFile = async () => {
+    try {
+      const resp = await fetch('/latest.txt');
+      if (!resp.ok) throw new Error('Failed to load file');
+      const fileText = await resp.text();
+      setText(fileText);
+    } catch (e) {
+      alert('Could not load latest.txt');
+    }
+  };
+
   return (
     <div style={{ height: "100vh", display: "grid", gridTemplateColumns: "380px 1fr" }}>
       {/* Controls */}
@@ -122,6 +135,7 @@ export default function App() {
           <button onClick={() => jumpBack()} style={btn()}>Back</button>
           <button onClick={() => jumpForward()} style={btn()}>Forward</button>
           <button onClick={resetToTop} style={btn({ background: "#222" })}>Reset</button>
+          <button onClick={loadFromFile} style={btn({ background: "#2a2a2a" })}>Load from File</button>
         </div>
 
         <label style={label()}>Speed (px/sec): {speed}</label>
