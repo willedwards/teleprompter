@@ -11,6 +11,12 @@ A React-based teleprompter app built with Vite.
 
 1. **Clone the repository:**
 
-   ```sh
-   git clone https://github.com/your-username/pilgrim-prompter.git
-   cd pilgrim-prompter
+> git clone https://github.com/willedwards/teleprompter.git
+
+2. **Install the code**
+
+>npm i
+
+3. **run the code**
+
+>npm run dev
